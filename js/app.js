@@ -30,9 +30,9 @@ document.getElementById('add-item').addEventListener('click', function () {
     for (let btn of doneBtn) {
         btn.addEventListener('click', function (event) {
 
-            // event.target.parentNode.parentNode.style.split = 'line-through';
+            event.target.parentNode.parentNode.style.textDecorationLine = "line-through";
             // event.stopImmediatePropagation();
-            event.target.parentNode.parentNode.style.display = 'none';
+
 
         });
     }
